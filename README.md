@@ -17,6 +17,8 @@ y para iniciar el proyecto
 
 - ng serve -o
 
+NOTA: Recuerda aceptar o activar que pueda acceder a tu ubicacion
+
 ## construido con
 - HTML5
 - CSS3/Sass

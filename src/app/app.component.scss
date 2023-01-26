@@ -1,0 +1,65 @@
+@import "../assets/scss/base/mixins";
+@import "../assets/scss/base/variables";
+
+.grupos {
+  color: $blanco;
+  background-image: linear-gradient(
+    to bottom,
+    $primario 0%,
+    $primario 50%,
+    $secundario 50%,
+    $secundario 100%
+  );
+
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $primario 0%,
+      $primario 50%,
+      $secundario 50%,
+      $secundario 100%
+    );
+  }
+
+  &__grid {
+    justify-items: center;
+    
+    @include grid(1, 1rem);
+    @include tablet {
+      @include grid(2, 5rem);
+    }
+  }
+
+  &__heading1 {
+    font-size: 3rem;
+    color: $secundario;
+  }
+
+  &__heading2 {
+    font-size: 3rem;
+    color: $primario;
+  }
+
+  &__texto {
+    color: $blanco;
+    font-size: 2.4rem;
+    line-height: 2;
+  }
+}
+
+.header {
+  padding: 0.5rem 0;
+}
+
+.th {
+  font-size: 2.5rem;
+}
+
+.footer {
+  display: flex;
+  padding: 1.1rem 0;
+}
+
+.tf {
+  font-size: 1.5rem;
+}

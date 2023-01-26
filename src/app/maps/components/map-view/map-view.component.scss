@@ -1,0 +1,20 @@
+@import "../../../../assets/scss/base/mixins";
+@import "../../../../assets/scss/base/variables";
+
+.map-container {
+  display: flex;
+  align-items: center;
+  height: 76vh;
+  // position: fixed;
+  top: 0px;
+  width: 100vw;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    height: 87vh;
+    top: 0px;
+    width: 100vw;
+  }
+
+}
